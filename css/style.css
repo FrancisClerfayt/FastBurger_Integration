@@ -24,6 +24,7 @@ header {
   background-position: left;
   background-repeat: no-repeat;
   background-size: 80%;
+  clear: both;
   height: 40em;
 }
 
@@ -38,6 +39,37 @@ nav > img {
   width: 110px;
 }
 
+p {
+  font-family: 'Sanchez', serif;
+}
+
+.clear {
+  clear: both;
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.left {
+  float: left;
+}
+
+.offset_bottom_right {
+  margin-top: 23px;
+  margin-left: 23px;
+}
+
+.offset_top_left {
+  margin-bottom: 23px;
+  margin-right: 23px;
+}
+
+.right {
+  float: right;
+}
+
 .right_logo_title {
   float: right;
   height: 100%;
@@ -50,6 +82,32 @@ nav > img {
   height: 225px;
   margin: 0 auto;
   width: 225px;
+}
+
+.rouded_border {
+  border: 2px solid #EAC435;
+  border-radius: 50%;
+  height: 515px;
+  margin: 10%;
+  width: 515px;
+}
+
+.rounded_picture {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+}
+
+.section_circle {
+  clear: both;
+}
+
+.section_circle .right p {
+  margin: 40% 20% 0 10%;
+}
+
+.section_circle .left p {
+  margin: 40% 10% 0 20%;
 }
 
 .slash {

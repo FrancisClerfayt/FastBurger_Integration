@@ -3,3 +3,58 @@
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  color: #000;
+  float: left;
+  font-family: 'Rye', cursive;
+  font-size: 32px;
+  margin: 34px 20px;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'Rye', cursive;
+  font-size: 66px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../img/splitburger_friesbasket_woodenplate.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  height: 40em;
+}
+
+nav {
+  height: 110px;
+}
+
+nav > img {
+  float: left;
+  height: 110px;
+  margin-left: 2%;
+  width: 110px;
+}
+
+.right_logo_title {
+  float: right;
+  height: 100%;
+  padding-top: 15%;
+  text-align: center;
+  width: 40%;
+}
+
+.right_logo_title > img {
+  height: 225px;
+  margin: 0 auto;
+  width: 225px;
+}
+
+.slash {
+  background: linear-gradient(120deg, transparent 60%, #EAC435 40%);
+  background-size: 100% auto;
+  height: 100%;
+  width: 100%;
+}

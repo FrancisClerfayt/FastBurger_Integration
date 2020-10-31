@@ -1,203 +1,125 @@
+/* Reset + base CSS */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	font-family: 'Sanchez', serif;
+	margin: 0;
+	padding: 0;
 }
 
-footer {
-  background-color: #EAC435;
-  clear: both;
-  height: 200px;
-  width: 100%;
-}
-
-footer p {
-  color: #fff;
-  display: inline-block;
-  font-size: 0.8em;
-  margin: 12% 20% 0 20%;
-  text-align: center;
-  width: 60%;
-}
-
+/* CSS Header Tags*/
 h1 {
-  color: #000;
-  float: left;
-  font-family: 'Rye', cursive;
-  font-size: 32px;
-  margin: 34px 20px;
-}
-
-h2 {
-  color: #fff;
-  font-family: 'Rye', cursive;
-  font-size: 66px;
-  margin: 0 auto;
+	font-family: 'Rye', cursive;
+	font-size: 1.8em;
 }
 
 header {
-  background-image: url("../img/splitburger_friesbasket_woodenplate.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 80%;
-  clear: both;
-  height: 40em;
+	display: flex;
+	flex-direction: column;
 }
 
 nav {
-  height: 110px;
+	align-items: center;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 }
 
 nav > img {
-  float: left;
-  height: 110px;
-  margin-left: 2%;
-  width: 110px;
+	width: 8%;
 }
 
-p {
-  font-family: 'Sanchez', serif;
-  font-size: 24px;
+/* CSS Header classes */
+.header_container {
+	background: linear-gradient(120deg, transparent 55%, #EAC435 45%);
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 8% 0;
 }
 
-.bottom_right_border {
-  border-bottom: 2px solid #EAC435;
-  border-right: 2px solid #EAC435;
+.header_picture {
+	align-self: stretch;
+	width: 70%;
 }
 
-.bottom_right_border img{
-  height: 550px;
-  width: 367px;
+.header_text {
+	text-align: center;
+	width: 30%;
+	z-index: 10;
 }
 
-.clear {
-  clear: both;
-  width: 100%;
+.header_text h2 {
+	color: #ffffff;
+	font-family: 'Rye', cursive;
+	font-size: 2.4em;
 }
 
-.half {
-  width: 50%;
-}
-
-#landscape_picture {
-  height: 347px;
-  width: 520px;
-}
-
-.left {
-  float: left;
-}
-
-.offset_bottom_right {
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-.offset_top_left {
-  margin-bottom: 15px;
-  margin-right: 15px;
-}
-
-.offset_top_right {
-  height: 700px;
-  margin-top: 15px;
-  margin-right: 15px;
-  width: 350px;
-}
-
-.right {
-  float: right;
-}
-
-.right_logo_title {
-  float: right;
-  height: 100%;
-  padding-top: 15%;
-  text-align: center;
-  width: 40%;
-}
-
-.right_logo_title > img {
-  height: 225px;
-  margin: 0 auto;
-  width: 225px;
-}
-
-.rouded_border {
-  border: 2px solid #EAC435;
-  border-radius: 50%;
-  height: 515px;
-  margin: 10%;
-  width: 515px;
-}
-
-.rounded_picture {
-  border-radius: 50%;
-  height: 500px;
-  width: 500px;
-}
-
-.section_circle,
-.section_stairs,
-.section_alternating_pictures {
-  clear: both;
-  margin: 5% 0;
-}
-
-.section_alternating_pictures .left,
-.section_alternating_pictures .right {
-  width: 50%;
-}
-
-.section_circle .right p {
-  margin: 40% 20% 0 10%;
-}
-
-.section_circle .left p {
-  margin: 40% 10% 0 20%;
-}
-
-.section_stairs {
-  padding: 0 5%;
+.header_text img {
+	width: 50%;
 }
 
 .slash {
-  background: linear-gradient(120deg, transparent 60%, #EAC435 40%);
-  background-size: 100% auto;
-  height: 100%;
-  width: 100%;
+	align-items: center;
+	background-image: url('../img/splitburger_friesbasket_woodenplate_resized.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
-.top_right_border {
-  border-top: 2px solid #EAC435;
-  border-right: 2px solid #EAC435;
+/* CSS Section_circle classes */
+.section_circle {
+	display: flex;
+	flex-direction: column;
 }
 
-.top_left_border {
-  border-top: 2px solid #EAC435;
-  border-left: 2px solid #EAC435;
+.circle_container,
+.circle_container_reverse {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5% 0;
 }
 
-.top_left_border >img {
-  height: 550px;
-  width: 367px;
+.circle_container {
+	flex-direction: row;
 }
 
-.third {
-  float: left;
-  margin-left: 3%;
-  width: 30%;
+.circle_container_reverse {
+	flex-direction: row-reverse;
 }
 
-.third:nth-child(2) {
-  margin-top: 8%;
+.rounded_picture {
+	border: 2px solid #EAC435;
+	border-radius: 50%;
+	margin: 0 15%;
+	width: 20%;
 }
 
-.third:nth-child(3) {
-  margin-top: 16%;
+.circle_container .rounded_picture {
+	padding-top: 15px;
+	padding-left: 15px;
 }
 
-.third p {
-  margin-top: 40px;
-  padding-right: 15px;
+.circle_container_reverse .rounded_picture {
+	padding-bottom: 15px;
+	padding-right: 15px;
+}
+
+.rounded_picture img {
+	border-radius: 50%;
+	width: 100%;
+}
+
+.text_section_circle {
+	padding: 5% 8%;
+	width: 50%;
+}
+
+/* CSS Section_stairs */
+.section_stairs {
+	display: flex;
+	flex-direction: row;
+}
+
+.stair {
+	width: 30%;
 }
